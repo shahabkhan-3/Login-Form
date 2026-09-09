@@ -199,7 +199,11 @@ body{
 }
 .social-login button img{
     width: 20px;
+    height:20px;
+    
 }
+.social-login .facebook img{ filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(210deg);}
+.social-login .google img{filter: none;}
 
 .dont{
    position: absolute;
