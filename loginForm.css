@@ -147,7 +147,7 @@ body{
   width: 90px;
   height: 90px;
   position: absolute;
-  top: 20px; /* adha bahar */
+  top: 20px; 
   left: 48%;
   transform: translateX(-50%);
 }
@@ -156,8 +156,8 @@ body{
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #0077b6; /* neela background */
-  color: white; /* icon safed */
+  background: #0077b6; 
+  color: white; 
   padding: 20px;
   position: relative;
   z-index: 5;
@@ -171,7 +171,6 @@ body{
   height: 100%;
 }
 
-/* ghumti hui rings */
 .ring {
   position: absolute;
   border-radius: 50%;
