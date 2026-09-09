@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -5,192 +12,209 @@ body{
     justify-content: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial,sans-serif;
     background: linear-gradient(to right,#4facfe, #00f2fe);
-
 }
+
 .login-box{
-    background: white;
-    
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px;
-    height: 300px;
-    width: 300px;
-    border: 1px solid black;
+    position: relative; 
     background: rgba(255, 255, 255, 0.15);
+    padding: 80px 30px 30px 30px; 
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    width: 350px;  
+    height: auto;  
+    min-height: 440px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    
-    
-}
-.email{
-    top: 220px;
-    left: 520px;
-    width: 200px;
-    padding: 6px;
-    position: absolute;
-    border-radius: 5px;
-    border: 1px solid#ccc;
-
-}
-.error{
-    font-size: 10px;
-    position: absolute;
-    top: 239px;
-      left: 520px;
-    color: red;
-}
-.pass{
-      top: 285px;
-      left: 520px;
-      width: 200px;
-      padding: 6px;
-      position: absolute;
-       border-radius: 5px;
-    border: 1px solid#ccc;
-}
-.perror{
-    font-size: 10px;
-    position: absolute;
-    top: 305px;
-      left: 520px;
-    color: red;
-}
-.btn{
-  top: 345px;
-    left: 520px;
-    padding: 8px;
-    width: 210px;
-    position: absolute;
-    background: #007bff;
-    border: none;
-    color: white;
-    cursor: pointer;
-       transition: 0.3s;
-}
-.btn:hover{
-    background: #0056b3;
-}
-.lmsg{
-    color: #333;
-}
-.Emsg{
-    top: 185px;
-    left: 520px;
-    position: absolute;
-    color: #333;
-}
-.Pmsg{
-     top: 250px;
-     left: 520px;
-     position: absolute;
-     color: #333;
-}
-.forget{
-    position: absolute;
-    top: 307px;
-    left: 640px;
-    font-size: 10px;
-    color: #007bff;
-    cursor: pointer;
-
-}
-.or{
-     position: absolute;
-    top: 373px;
-    left: 587px;
-    font-size: 10px;
-}
-.social-login{
-    position: absolute;
-    bottom: 160px;
-    left: 520px; 
-    padding: 4px;
-    width: 300px;
-    gap: 10px;
-   
+    backdrop-filter: blur(10px);
 }
 
-.google{
-    width: 65px;
-     cursor: pointer;
-        transition: 0.3s;
-}
-.github{
-    width: 65px;
-     cursor: pointer;
-        transition: 0.3s;
-}
-.facebook{
-    width: 65px;
-     cursor: pointer;
-     transition: 0.3s;
-}
-.social-login button img{
-    width: 15px;
-}
-.dont{
-   position: absolute;
-    bottom: 135px;
-    left: 520px;
-    font-size: 10px;  
-}
-.register{
-  position: absolute;
-    bottom: 129px;
-    left: 627px;
-    font-size: 10px;  
-     cursor: pointer;
-     color: #007bff;
-}
 .avatar-box {
   width: 90px;
   height: 90px;
-  position: absolute;
-  top: 20px; 
-  left: 48%;
-  transform: translateX(-50%);
+  position: absolute; 
+  top: -45px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 10; 
 }
 
 .avatar {
-  width: 100%;
-  height: 100%;
+  width: 115%;
+  height: 115%;
   border-radius: 50%;
-  background: #0077b6; 
-  color: white; 
+  background: #0077b6;
+  color: white;
   padding: 20px;
-  position: relative;
-  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.avatar svg {
-  width: 100%;
-  height: 100%;
+  position: relative;
+  z-index: 11; 
 }
 
 .ring {
   position: absolute;
   border-radius: 50%;
   border: 2px dashed #0077b6;
+  z-index: 9; 
 }
 .ring1 {
   width: 100px;
   height: 150px;
-  top: -10px;
-  left: 10px;
+  top: -20px;
+  left: -5px;
   animation: ghumao1 4s linear infinite;
 }
 .ring2 {
   width: 100px;
   height: 165px;
-  top: -15px;
-  left: 10px;
+  top: -25px;
+  left: -5px;
   border-style: dotted;
-  animation: ghumao2 6s linear infinite;
+  animation: ghumao2 5s linear infinite;
 }
 
 @keyframes ghumao1 { 100% { transform: rotate(360deg); } }
 @keyframes ghumao2 { 100% { transform: rotate(-360deg); } }
+
+.lmsg{
+    position: absolute;
+    top: 55px;
+    left: 25%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    z-index: 5;
+}
+
+.Emsg{
+    position: absolute;
+    top: 100px; 
+    left: 30px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.email{
+    position: absolute;
+    top: 125px; 
+    left: 30px;
+    width: 290px; 
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.error{
+    position: absolute;
+    top: 155px;
+    left: 30px;
+    font-size: 10px;
+    color: red;
+}
+
+.Pmsg{
+     position: absolute;
+     top: 175px; 
+     left: 30px;
+     color: #333;
+     font-size: 14px;
+     font-weight: bold;
+}
+
+.pass{
+      position: absolute;
+      top: 200px; 
+      left: 30px;
+      width: 290px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+}
+
+.perror{
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    font-size: 10px;
+    color: red;
+}
+
+.forget{
+    position: absolute;
+    top: 230px;
+    right: 30px; 
+    font-size: 10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.btn{
+  position: absolute;
+  top: 260px; 
+  left: 30px;
+  padding: 10px;
+  width: 290px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover{
+    background: #0056b3;
+}
+
+.or{
+     position: absolute;
+    top: 300px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 12px;
+}
+
+.social-login{
+    position: absolute;
+    top: 340px; 
+    left: 30px;
+    width: 290px;
+    display: flex; 
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social-login button{
+    flex: 1;
+    padding: 8px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-login button img{
+    width: 20px;
+}
+
+.dont{
+   position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;  
+}
+
+.register{
+  position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;  
+     cursor: pointer;
+     color: #007bff;
+}
