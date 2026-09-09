@@ -1,0 +1,197 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial,sans-serif;
+    background: linear-gradient(to right,#4facfe, #00f2fe);
+
+}
+.login-box{
+    background: white;
+    
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px;
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    
+}
+.email{
+    top: 220px;
+    left: 520px;
+    width: 200px;
+    padding: 6px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid#ccc;
+
+}
+.error{
+    font-size: 10px;
+    position: absolute;
+    top: 239px;
+      left: 520px;
+    color: red;
+}
+.pass{
+      top: 285px;
+      left: 520px;
+      width: 200px;
+      padding: 6px;
+      position: absolute;
+       border-radius: 5px;
+    border: 1px solid#ccc;
+}
+.perror{
+    font-size: 10px;
+    position: absolute;
+    top: 305px;
+      left: 520px;
+    color: red;
+}
+.btn{
+  top: 345px;
+    left: 520px;
+    padding: 8px;
+    width: 210px;
+    position: absolute;
+    background: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+       transition: 0.3s;
+}
+.btn:hover{
+    background: #0056b3;
+}
+.lmsg{
+    color: #333;
+}
+.Emsg{
+    top: 185px;
+    left: 520px;
+    position: absolute;
+    color: #333;
+}
+.Pmsg{
+     top: 250px;
+     left: 520px;
+     position: absolute;
+     color: #333;
+}
+.forget{
+    position: absolute;
+    top: 307px;
+    left: 640px;
+    font-size: 10px;
+    color: #007bff;
+    cursor: pointer;
+
+}
+.or{
+     position: absolute;
+    top: 373px;
+    left: 587px;
+    font-size: 10px;
+}
+.social-login{
+    position: absolute;
+    bottom: 160px;
+    left: 520px; 
+    padding: 4px;
+    width: 300px;
+    gap: 10px;
+   
+}
+
+.google{
+    width: 65px;
+     cursor: pointer;
+        transition: 0.3s;
+}
+.github{
+    width: 65px;
+     cursor: pointer;
+        transition: 0.3s;
+}
+.facebook{
+    width: 65px;
+     cursor: pointer;
+     transition: 0.3s;
+}
+.social-login button img{
+    width: 15px;
+}
+.dont{
+   position: absolute;
+    bottom: 135px;
+    left: 520px;
+    font-size: 10px;  
+}
+.register{
+  position: absolute;
+    bottom: 129px;
+    left: 627px;
+    font-size: 10px;  
+     cursor: pointer;
+     color: #007bff;
+}
+.avatar-box {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 20px; /* adha bahar */
+  left: 48%;
+  transform: translateX(-50%);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #0077b6; /* neela background */
+  color: white; /* icon safed */
+  padding: 20px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ghumti hui rings */
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px dashed #0077b6;
+}
+.ring1 {
+  width: 100px;
+  height: 150px;
+  top: -10px;
+  left: 10px;
+  animation: ghumao1 4s linear infinite;
+}
+.ring2 {
+  width: 100px;
+  height: 165px;
+  top: -15px;
+  left: 10px;
+  border-style: dotted;
+  animation: ghumao2 6s linear infinite;
+}
+
+@keyframes ghumao1 { 100% { transform: rotate(360deg); } }
+@keyframes ghumao2 { 100% { transform: rotate(-360deg); } }
